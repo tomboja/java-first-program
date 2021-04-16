@@ -16,10 +16,10 @@ public class BestLoanRates {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter your name: ");
+    System.out.println("Enter your name");
     String name = scanner.nextLine();
-
-    System.out.print("Enter the loan term (in years): ");
+    System.out.println(name);
+    System.out.println("Enter the loan term (in years)");
     int loanTermInYears = scanner.nextInt();
 
     float bestRate = getRates(loanTermInYears);
