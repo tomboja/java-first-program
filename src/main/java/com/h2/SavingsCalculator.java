@@ -29,12 +29,12 @@ public class SavingsCalculator {
 
     // Parse creditsAsString values from String to float and store them in credits variable
     for (int i = 0; i < creditsAsString.length; i++) {
-      credits[i] = Float.parseFloat(creditsAsString[i]);
+      credits[i] = Utilities.getFloatValue(creditsAsString[i]);
     }
 
     // Parse debitsAsString values from String to Float and store them in debits variable
     for (int i = 0; i < debitsAsString.length; i++) {
-      debits[i] = Float.parseFloat(debitsAsString[i]);
+      debits[i] = Utilities.getFloatValue(debitsAsString[i]);
     }
 
     SavingsCalculator calculator = new SavingsCalculator(credits, debits);
